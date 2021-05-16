@@ -1,10 +1,12 @@
 import React from 'react'
 
 class Contacts extends React.Component{
+    _isMounted=false
     constructor(props){
         super(props)
         this.state={contacts: [],btn: {backgroundColor: 'none',border: 'none',color: '#0074e1',_isMounted: true}}
     }
+    componentDidMount=()=>this._isMounted='1'
     get_all_contacts=()=>{
         fetch('/user/list',{
             method: 'get',
@@ -17,15 +19,21 @@ class Contacts extends React.Component{
             if(res.ok) return res.json()
         })
         .then(jsonres=>{
+            if(this._isMounted==='1'){
             this.setState({contacts: jsonres})
+            }
         })
         .catch(err=>console.log(err))
     }
     messageBox=(to_id,to_username)=>{
         this.props.messageBox(to_id,to_username)
     }
+    componentWillUnmount() {
+        this._isMounted=false
+      }    
     render(){
         this.get_all_contacts()
+        
         return(
                 <ul style={{listStyle: 'none'}}>
                 {this.state.contacts.map(c=> {
