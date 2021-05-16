@@ -14,4 +14,10 @@ At this string ,replace the '<password>' part
 mongodb+srv://<username>:<password>@<your-cluster-url>/test?retryWrites=true&w=majority
 => const url='mongodb+srv://<username>:'+process.env.MONGO_ATLAS_PW+'@<your-cluster-url>/test?retryWrites=true&w=majority'
 
-![Image Register](../.././ss/s1.png)
+![Image Register](https://github.com/Ishita-Mishra02/chat_web_app/blob/main/ss/s1.png)
+
+![Login](https://github.com/Ishita-Mishra02/chat_web_app/blob/main/ss/s2.png)
+
+![User-1](https://github.com/Ishita-Mishra02/chat_web_app/blob/main/ss/s3.png)
+
+![User-2](https://github.com/Ishita-Mishra02/chat_web_app/blob/main/ss/s4.png)
