@@ -14,4 +14,4 @@ At this string ,replace the '<password>' part
 mongodb+srv://<username>:<password>@<your-cluster-url>/test?retryWrites=true&w=majority
 => const url='mongodb+srv://<username>:'+process.env.MONGO_ATLAS_PW+'@<your-cluster-url>/test?retryWrites=true&w=majority'
 
-![Image Register](./s1.png)
+![Image Register](../.././ss/s1.png)
