@@ -4,6 +4,7 @@ A one to one text messaging system using MERN stack and socket.io
 After downloading above files,
 go to 'server' folder then open 'nodemon.json'
 modify **'JWT_KEY'** to any other value
+
 In variable named **'MONGO_ATLAS_PW'**, paste your Mongo ATLAS PASSWORD which you get on MongoDB website
 
 Refer tutorial - https://www.mongodb.com/blog/post/quick-start-nodejs-mongodb--how-to-get-connected-to-your-database
