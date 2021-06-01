@@ -16,8 +16,10 @@ At this string ,replace the '<password>' part
 mongodb+srv://<username>:<password>@<your-cluster-url>/test?retryWrites=true&w=majority
 => const url='mongodb+srv://<username>:'+process.env.MONGO_ATLAS_PW+'@<your-cluster-url>/test?retryWrites=true&w=majority'
   
->Go to folder 'server' at terminal and run the command 'npm start' to initiate server (port 5000)
->Go to folder 'front-end' at another terminal and run the command 'npm start' (port 3000- client)
+>Navigate folder 'server' and run the command 'npm install', this step will initiate installation of dependencies   
+>Navigate to folder 'front-end' and repeat the above steps to get all dependencies at client side
+>Go to folder 'server' at terminal and run the command 'npm start' to initiate server (port 5000)   
+>Go to folder 'front-end' at another terminal and run the command 'npm start' (port 3000- client)   
 
 run in different browsers
 
